@@ -38,10 +38,10 @@ class App extends Component {
   }
 
   render(){
-
+    const { characters } = this.state
     return (
       <div className="container">
-        <Table characterData={this.state.characters} removeCharacter={this.removeCharacter} />
+        <Table characterData={characters} removeCharacter={this.removeCharacter} />
       </div>
     );
   }  
